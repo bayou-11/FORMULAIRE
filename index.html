@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULAIRE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('user_9FoxhqQUsxjcB4tmHWyrJ')
+  </script>
+
+</head>
+
+<body style="background: cyan;">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <h1 class="text-center">FORMULAIRE</h1>
+        <form method="" id="form">
+          <div class="field">
+            <label>Nom</label>
+            <input type="text" name="nom" id="nom" class="form-control" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre nom')" oninput="setCustomValidity('')">
+          </div>
+          <div class="field">
+            <label class="control-label">Adresse</label>
+            <input type="text" name="adresse" id="adresse" class="form-control" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre adresse')" oninput="setCustomValidity('')">
+          </div>
+          <div class="field">
+            <label class="control-label" for="">Email</label>
+            <input type="email" name="mail" id="mail" class="form-control" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre email')" oninput="setCustomValidity('')">
+          </div>
+          <div class="form-group field">
+            <label class="control-label" for="">Mots de Passe</label>
+            <input type="password" name="passe" id="passe" class="form-control" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre mot de passe')" oninput="setCustomValidity('')">
+          </div>
+          <div class="form-group field">
+            <label class="control-label" for="">Telephone</label>
+            <input type="tel" name="tel" id="tel" class="form-control" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre numéro de téléphone')"
+              oninput="setCustomValidity('')">
+          </div>
+          <div class="field">
+            <label class="control-label" for="">CHOISIR VOTRE COURS</label>
+            <select name="cours" id="cours">
+              <option value="PHP">PHP</option>
+              <option value="Java Script">JAVASCRIPT</option>
+              <option value="html">HTML</option>
+              <option value="Java">JAVA</option>
+            </select>
+          </div>
+          <div class="form-group field">
+            <label class="control-label" for="" name="commentaire" id="commentaire">commentaire</label>
+            <textarea name="commentaire" id="commentaire" cols="30" rows="5" required=""
+              oninvalid="this.setCustomValidity('Veuiller saisir votre message')"
+              oninput="setCustomValidity('')"></textarea>
+          </div>
+          <div class="form-group ">
+            <input type="submit" id="button" value="Envoyer">
+            <button type="reset">Annuler</button>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
